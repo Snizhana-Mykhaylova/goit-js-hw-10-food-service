@@ -6,7 +6,7 @@ themeSwitchToggleRef.addEventListener('change', changeTheme);
 function changeTheme() {
   event.preventDefault();
 
-  if (!themeSwitchToggleRef.checked) {
+  if (themeSwitchToggleRef.checked) {
     bodyRef.classList.add('dark-theme');
     return;
   }
